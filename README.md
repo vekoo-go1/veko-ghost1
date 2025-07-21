@@ -1,10 +1,10 @@
-# 🕷 Veko Ghost
+#  Veko Ghost
 
 > *An exploration of invisible dominance in cyberspace.*
 
 ---
 
-## 📘 Abstract
+##  Abstract
 
 Veko Ghost is not a tool.
 It is an idea.  
@@ -21,7 +21,7 @@ This is *only* a story.
 
 ---
 
-## ⚠️ Warning: Thought Experiment, Not Software
+##  Warning: Thought Experiment, Not Software
 
 Veko Ghost is a hypothetical construct — a thought experiment that showcases what is possible when intent, knowledge, and tools converge in the wrong way. While no binary is shared here, the architectural concept has been documented to:
 
@@ -32,7 +32,7 @@ Veko Ghost is a hypothetical construct — a thought experiment that showcases w
 
 ---
 
-## 🧠 Philosophy of Veko Ghost
+##  Philosophy of Veko Ghost
 
 What if a test tool…
 
@@ -46,7 +46,7 @@ That is the essence of **Ghost Testing** — and Veko Ghost is its embodiment.
 
 ---
 
-## 🧩 Technical Overview
+##  Technical Overview
 
 While the specific mechanisms are **not published**, here are the *types of modules* Veko Ghost would theoretically include:
 
