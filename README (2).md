@@ -1,136 +1,121 @@
-# 🛑 VEKO GHOST — CyberOps Class Obfuscation Suite 🛑
+# VEKO GHOST
 
-> **WARNING**: This tool is extremely powerful and should be used with *strict ethical awareness*. Unauthorized or unethical use may violate laws and terms of service.
-
-## 🧠 Overview
-
-**VEKO GHOST** is a highly specialized internal-class utility designed to **disguise**, **scramble**, and **ghost** outbound operations, primarily for cybersecurity stress-testing, anonymized scraping, and private network research purposes.
-
-This tool is *NOT* intended for malicious activities. It exists to empower responsible developers, researchers, and ethical hackers with a self-contained anonymous operations layer.
+> **"An Obfuscation-Ready Recon & Exploit Ghost Tool. Undetected. Unmatched. Unbelievable."**
 
 ---
 
-## ⚙️ Core Capabilities
+## &#x20;What is Veko Ghost?
 
-### 🕸️ Ghost Tunneling Layer
-- Disguises traffic signatures with randomization
-- Alters User-Agent / headers / TLS fingerprints
-- Optionally routes through **custom proxy chains**, **SOCKS5**, or **Tor**
+**VEKO GHOST** is a **reconnaissance & exploit utility tool** designed with a unique philosophy: *blend in, deceive, attack*. While other tools show off their signatures, Veko Ghost moves quietly—executing deep network enumeration, vulnerability identification, and stealth scanning without leaving obvious traces. It is designed as a modular CLI-based toolkit that can simulate the behavior of legitimate traffic while enabling devastating analysis and automation.
 
-### 🎭 Identity Shifter
-- Rotates identities: browser headers, geo-IP, platform signals
-- Spoofs OS-level fingerprint (on supported systems)
-
-### 🔁 Proxy Cycler Engine
-- Load and rotate thousands of proxies dynamically
-- Optional delay injection and jitter for realism
-
-### 🧩 Modular Extension Interface
-- Extend Ghost with your own modules (e.g. DNS override, DoH force, JavaScript sandbox etc.)
+> **DISCLAIMER**: This tool is strictly for educational, research, or penetration testing use on systems you own or are authorized to test. We are not responsible for misuse.
 
 ---
 
-## 🧪 Example Use Cases
+## &#x20;Key Capabilities
 
-> ❗These examples are for **legal research, benchmarking, and academic** usage only.
+### &#x20;Network Reconnaissance
 
-- Anonymous scraping for open data
-- Ghost-layer for load testing tools like `veko-go`
-- Network layer masking for public security honeypots
-- Mimicking organic traffic patterns for bot defense testing
+* Stealth port scanning
+* DNS brute forcing with spoofing cover
+* CDN and WAF detection
+* OS fingerprinting without triggering firewalls
+
+### &#x20;Exploit Surface Mapping
+
+* Auto-fetching known CVEs based on service fingerprints
+* Passive traffic analysis to detect open sessions
+* Identifies honeypots & decoys
+
+### &#x20;Advanced Spoofing
+
+* Randomized User-Agent and packet TTLs
+* Can rotate through residential proxy lists or Tor (if configured)
+* DNS-over-HTTPS support
+
+### &#x20;Integration-Ready
+
+* Output data in JSON/CSV for pipelines
+* Chainable with other Veko Tools
+
+### &#x20;Evasion Modes
+
+* Timed and random delays to mimic real users
+* Generates noise around target to confuse detection tools
+* Pluggable evasion strategies: *ghost*, *shadow*, *flood*, *passive*
 
 ---
 
-## 📂 Folder Structure
+## &#x20;Use Cases
+
+| Scenario                      | Veko Ghost Advantage                              |
+| ----------------------------- | ------------------------------------------------- |
+| Bug Bounty Recon              | Stay undetected while gathering deep service data |
+| Red Team Simulation           | Evade blue teams, generate misleading patterns    |
+| OSINT Collection              | Extract open metadata and exposure silently       |
+| Research on Internet Exposure | Measure live vulnerability presence safely        |
+
+---
+
+## &#x20;Why Veko Ghost is Different
+
+* **Zero-signal scanning:** Designed to mimic normal traffic, not get flagged.
+* **Evasion-first philosophy:** Not just another scanner—this is anti-forensics by design.
+* **Modular architecture:** Add plugins or link with your own CLI chains.
+* **No install:** Portable binary; no trace left behind.
+
+> Imagine Nmap, FFUF, and Nikto—but wearing an invisibility cloak and behaving like a human.
+
+---
+
+## &#x20;Download & Usage
+
+Binary releases available on [GitHub Releases](https://github.com/veko-org/veko-ghost/releases)
 
 ```bash
-veko-ghost/
-├── ghost.js             # core controller
-├── config.json          # your settings: proxies, Tor, headers
-├── modules/             # optional plugins & scripts
-│   ├── tor.js
-│   ├── doh.js
-│   └── proxyCycler.js
-├── LICENSE
-└── README.md
+./veko-ghost --url https://target.com --mode ghost --output result.json
 ```
-
----
-
-## 🖥️ Requirements
-
-- Node.js v18+
-- Optional: Installed Tor daemon (`tor` command), or proxy list (.txt)
-
----
-
-## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/veko-tools/veko-ghost.git
-cd veko-ghost
-npm install
-node ghost.js
-```
-
-### 🔐 Setup Proxies
-
-Edit `config.json` like:
-
-```json
-{
-  "proxyList": "./proxies.txt",
-  "useTor": true,
-  "rotateUA": true,
-  "enableJitter": true
-}
+# Full stealth mode with fake traffic
+./veko-ghost --url https://target.com --user-agent random --delay random --tor --evasion shadow
 ```
 
 ---
 
-## 📦 Download Release
+## &#x20;Legal Warning
 
-Grab the **latest compiled version** here (Node script or packaged executable):
-
-👉 **[Download Veko Ghost](https://github.com/veko-tools/veko-ghost/releases/latest)**
+Using Veko Ghost against targets without **explicit written consent** is illegal and unethical. The developers take **no responsibility** for misuse or damages caused by this tool. The source code is open only for **educational, testing, or red teaming purposes**.
 
 ---
 
-## 🧨 Warning
+## &#x20;Share & Collaborate
 
-This is **not** a toy.
+Built by the **Veko Project**, pushing the limits of ethical cybersecurity.
 
-Using VEKO GHOST recklessly may trigger rate limits, service bans, or legal responses.
+Follow us on:
 
-Always test within **your own infrastructure** or with **explicit permission**.
-
----
-
-## 📜 Legal
-
-This tool is released for **educational and ethical research** only under the [MIT License](./LICENSE).
-
-You are solely responsible for how you use it.
+* &#x20;Twitter: [@veko\_org](https://twitter.com/veko_org)
+* Github:@veko-go1
 
 ---
 
-## 🧠 Why VEKO GHOST Matters
+## &#x20;Coming Soon
 
-Today's internet is no longer anonymous. Every request can be traced, fingerprinted, and filtered.
-
-**VEKO GHOST is your countermeasure**.
-
-- 🌐 Hide your traffic patterns
-- 🎯 Test your own defenses
-- 🧬 Obfuscate bot behavior for research
-
-If you build tools that live on the edge, this is your new invisible cloak.
+* Browser-based traffic spoofing
+* Auto-sandbox testing mode
+* GitHub Copilot baiting for malware detection bypasses
+* Full GUI with timeline recon viewer (Veko Ghost Phantom UI)
 
 ---
 
-## 📣 Community & Credits
+## &#x20;Final Words
 
-Follow the project on X (Twitter) — `@veko_core`  
-Join our GitHub discussion tab for technical help.
+> **"You don’t see Veko Ghost. You feel it."**
 
-Made by the [VEKO Initiative](https://github.com/veko-tools)
+This is not a tool for script kiddies.
+This is not a scanner. It’s a weaponized ghost protocol.
+
+Unseen. Unheard. Unmatched.
+
+---
