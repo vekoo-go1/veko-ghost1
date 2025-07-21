@@ -96,7 +96,7 @@ Built by the **Veko Project**, pushing the limits of ethical cybersecurity.
 Follow us on:
 
 * &#x20;Twitter: [@veko\_org](https://twitter.com/veko_org)
-* Github:@veko-go1
+*  &#x20; Github:[veko-go1].(https://github.com/vekoo-go1)
 
 ---
 
