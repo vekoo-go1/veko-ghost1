@@ -46,4 +46,69 @@ The public version is stripped of core logic. However, the idea revolves around:
 ---
 
 ##  Repository Structure
+veko-ghost/
+├── LICENSE
+├── README.md
+├── docs/
+│ └── concept-overview.md # High-level goals & vision
+├── stubs/
+│ ├── ghost-runner.js # Placeholder engine
+│ ├── task-seed.json # Template for ghost operations
+│ └── ghost.config.json # Public-safe config example
+└── examples/
+└── obfuscated-mode.txt # Output mock (harmless)
+
+
+> This repository is intentionally **incomplete** and **obfuscated** to prevent misuse.
+
+---
+
+##  Disclaimer
+
+This is a **conceptual framework** for educational and experimental study.  
+Do **not** attempt to use this for unethical purposes. The public files are **non-operational** by design.  
+No core modules or dangerous logic is exposed in this repository. If you're looking for working exploit-like behavior, you're in the wrong place.
+
+---
+
+##  Background
+
+Inspired by real-world limitations in automation systems like `puppeteer`, `selenium`, `k6`, and `torified load runners`, this project explores **ghost-like computational presence** — meaning it does the job without being _seen_, _detected_, or _flagged_.
+
+---
+
+##  Who is this for?
+
+- Security researchers
+- Advanced automation engineers
+- OSINT practitioners
+- Anonymity layer testers
+- Curious minds interested in what’s possible when logic goes dark
+
+---
+
+##  Ethical Use & Licensing
+
+MIT License applies only to this public shell.  
+**You may not reverse-engineer, replicate, or reconstruct any private implementation** alluded to by this repository.
+
+**Be responsible.**  
+Power without ethics is just another ghost in the machine.
+
+---
+
+##  Contact
+
+For collaboration or academic inquiry only.  
+**We do not accept usage requests.**  
+You may fork for research and non-commercial use under the license.
+
+---
+
+##  Final Note
+
+You won’t find anything illegal here.  
+But you might find a spark of something... futuristic.
+
+
 
