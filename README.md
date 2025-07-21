@@ -49,17 +49,21 @@ The public version is stripped of core logic. However, the idea revolves around:
 
 
 ##  Repository Structure
+## Repository Structure
+
+```text
 veko-ghost/
 ├── LICENSE
 ├── README.md
 ├── docs/
-│ └── concept-overview.md # High-level goals & vision
+│   └── concept-overview.md
 ├── stubs/
-│ ├── ghost-runner.js # Placeholder engine
-│ ├── task-seed.json # Template for ghost operations
-│ └── ghost.config.json # Public-safe config example
+│   ├── ghost-runner.js
+│   ├── task-seed.json
+│   └── ghost.config.json
 └── examples/
-└── obfuscated-mode.txt # Output mock (harmless)
+    └── obfuscated-mode.txt
+
 
 
 > This repository is intentionally **incomplete** and **obfuscated** to prevent misuse.
